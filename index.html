@@ -9,10 +9,57 @@
             text-align: center;
             font-size: 60px;
         }
+
+        .know-more{
+            position: fixed;
+            right: 20px;
+            bottom: 20px;
+            height: 50px;
+            width: 50px;
+            background-color: #ffc299 ;
+            border-radius: 50px;
+            padding: 10px;
+            border: 2px solid #ff751a;
+            cursor: pointer;
+        }
+
+        .vegetable{
+            width: 450px;
+        }
+
+          .header-content{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+            
+
+          }
+
+          .content{
+            width: 450px;
+            font-size: 22px;
+          }
+        
+
+
        /* Mobile Device */
        @media screen and (max-width: 500px) {
        .page-heading{
         font-size: 35px;
+       }
+
+       .know-more{
+        height: 30px;
+        width: 30px;
+       }
+
+       .vegetable{
+        width: 300px;
+       }
+
+       .content{
+        font-size: 18px;
        }
        }
         
@@ -22,15 +69,38 @@
        .page-heading{
         font-size: 45px;
        }
+
+       .know-more{
+        height: 40px;
+        width: 40px;
+       }
        }
 
          /* Desktop  Device */
+         @media screen and (min-width: 769px) {
+            
+         }
     </style>
 </head>
 <body>
 <h1 class="page-heading">
     Vegetable Store</h1>
 
+    <div class="header-content">
+        <img src="./img/vegetabel.jpg" class="vegetable" alt="Available Vegetable's">
+
+        <div class="content">
+ <p>
+    A vegetable store, also known as a greengrocer, is a shop that sells fresh fruits and 
+    vegetables. Some vegetable stores are small carts that sell directly to customers, while
+     others may be located in neighborhoods and sell through vendors. You can also buy vegetables
+      online through stores like Listerr, which offer features like product sharing, detailed product 
+      views, and direct buy buttons.
+ </p>
+        </div>
+    </div>
+    <a href="https://en.wikipedia.org/wiki/Grocery_store" target="_blank">
     <img src="./img/tap.png" class="know-more" alt="Click here to know more"/>
+</a>
 </body>
 </html>
