@@ -60,16 +60,26 @@
 
           .menus{
             margin-left: 150px;
+            display: flex;
+            align-items: center;
           }
 
           .menu-item{
-            margin-right: 20px;
+            margin-right: 30px;
             cursor: pointer;
+            display: flex;
+            align-items: center;
+            
+          }
+
+          .menu-item:hover{
+            color: #ff751a;
           }
 
           .menu-icon{
-            height: 30px;
-            width: 30px;
+            height: 25px;
+            width: 25px;
+            margin-right: 5px;
           }
 
        /* Mobile Device */
@@ -90,6 +100,28 @@
        .content{
         font-size: 18px;
        }
+
+       .vegetabel-emoji{
+        font-size: 18px;
+       }
+
+       .menus{
+        margin-left: 20px;
+       }
+
+       .menu-text{
+        display: none;
+       }
+
+       .menu-item{
+        margin-right: 13px;
+       }
+
+       .menu-icon{
+            height: 30px;
+            width: 30px;
+            margin-right: 5px;
+          }
        }
         
     
@@ -121,23 +153,33 @@
    <div class="menus">
     <span class="menu-item">
       <img src="./img/vege.png" class="menu-icon" alt="Vegetables">
+      <span class="menu-text">
       Vegetables
+      </span>
     </span>
     <span class="menu-item">
       <img src="./img/fruits.png" class="menu-icon" alt="Fruits">
+      <span class="menu-text">
       Fruits
+      </span>
     </span>
     <span class="menu-item">
       <img src="./img/juice.webp" class="menu-icon" alt="Juice fruites">
+      <span class="menu-text">
       Juice Fruits
+      </span>
     </span>
     <span class="menu-item">
       <img src="./img/organic.png" class="menu-icon" alt="Organic">
+      <span class="menu-text">
       Organic
+    </span>
     </span>
     <span class="menu-item">
       <img src="./img/food.png" class="menu-icon" alt="Food">
+      <span class="menu-text">
       Food
+      </span>
     </span>
 
    </div>
