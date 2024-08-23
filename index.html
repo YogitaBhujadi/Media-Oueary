@@ -5,6 +5,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Media Queries</title>
     <style>
+        body{
+            margin: 0px;
+            padding: 0px;
+        }
         .page-heading{
             text-align: center;
             font-size: 60px;
@@ -41,7 +45,32 @@
             font-size: 22px;
           }
         
+          .navbar{
+            background-color: black;
+            display: flex;
+            align-items: center;
+            padding: 5px 40px;
+            color: white;
 
+          }
+
+          .vegetabel-emoji{
+            font-size: 50px;
+          }
+
+          .menus{
+            margin-left: 150px;
+          }
+
+          .menu-item{
+            margin-right: 20px;
+            cursor: pointer;
+          }
+
+          .menu-icon{
+            height: 30px;
+            width: 30px;
+          }
 
        /* Mobile Device */
        @media screen and (max-width: 500px) {
@@ -55,7 +84,7 @@
        }
 
        .vegetable{
-        width: 300px;
+        width: 250px;
        }
 
        .content{
@@ -83,6 +112,36 @@
     </style>
 </head>
 <body>
+
+    <div class="navbar">
+   <span class="vegetabel-emoji" >
+    <img src="./img/vegetable.png" <h4> Vegetable's</h4>
+   </span>
+
+   <div class="menus">
+    <span class="menu-item">
+      <img src="./img/vege.png" class="menu-icon" alt="Vegetables">
+      Vegetables
+    </span>
+    <span class="menu-item">
+      <img src="./img/fruits.png" class="menu-icon" alt="Fruits">
+      Fruits
+    </span>
+    <span class="menu-item">
+      <img src="./img/juice.webp" class="menu-icon" alt="Juice fruites">
+      Juice Fruits
+    </span>
+    <span class="menu-item">
+      <img src="./img/organic.png" class="menu-icon" alt="Organic">
+      Organic
+    </span>
+    <span class="menu-item">
+      <img src="./img/food.png" class="menu-icon" alt="Food">
+      Food
+    </span>
+
+   </div>
+    </div>
 <h1 class="page-heading">
     Vegetable Store</h1>
 
